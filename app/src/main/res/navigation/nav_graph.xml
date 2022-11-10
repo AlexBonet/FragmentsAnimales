@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_xPecesFragment"
             app:destination="@id/xPecesFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_xAnfibiosFragment"
+            app:destination="@id/xAnfibiosFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -131,5 +134,38 @@
         <action
             android:id="@+id/action_xPeces2Fragment_to_xPecesFragment"
             app:destination="@id/xPecesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xAnfibiosFragment"
+        android:name="es.alexbonet.fragmentsv2.xAnfibiosFragment"
+        android:label="fragment_x_anfibios"
+        tools:layout="@layout/fragment_x_anfibios" >
+        <action
+            android:id="@+id/action_xAnfibiosFragment_to_xAnfibios1Fragment"
+            app:destination="@id/xAnfibios1Fragment" />
+        <action
+            android:id="@+id/action_xAnfibiosFragment_to_xAnfibios2Fragment"
+            app:destination="@id/xAnfibios2Fragment" />
+        <action
+            android:id="@+id/action_xAnfibiosFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xAnfibios1Fragment"
+        android:name="es.alexbonet.fragmentsv2.xAnfibios1Fragment"
+        android:label="fragment_x_anfibios1"
+        tools:layout="@layout/fragment_x_anfibios1" >
+        <action
+            android:id="@+id/action_xAnfibios1Fragment_to_xAnfibiosFragment"
+            app:destination="@id/xAnfibiosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xAnfibios2Fragment"
+        android:name="es.alexbonet.fragmentsv2.xAnfibios2Fragment"
+        android:label="fragment_x_anfibios2"
+        tools:layout="@layout/fragment_x_anfibios2" >
+        <action
+            android:id="@+id/action_xAnfibios2Fragment_to_xAnfibiosFragment"
+            app:destination="@id/xAnfibiosFragment" />
     </fragment>
 </navigation>
