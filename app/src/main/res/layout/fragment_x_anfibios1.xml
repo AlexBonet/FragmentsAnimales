@@ -36,10 +36,12 @@
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="200dp"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_first"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@mipmap/ic_anfibios1_foreground"
+        tools:srcCompat="@mipmap/ic_anfibios1_foreground" />
 
     <TextView
         android:id="@+id/textView6"
@@ -60,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/animal1"
+        android:text="Tritón"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

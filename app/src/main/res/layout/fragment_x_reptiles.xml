@@ -38,26 +38,32 @@
         android:layout_height="@dimen/fotos"
         android:layout_marginStart="64dp"
         android:layout_marginTop="20dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_reptiles1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_first"
-        tools:src="@tools:sample/avatars" />
+        tools:src="@mipmap/ic_reptiles1" />
 
     <ImageButton
         android:id="@+id/btnAnimal2"
         android:layout_width="@dimen/fotos"
         android:layout_height="@dimen/fotos"
         android:layout_marginEnd="64dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_reptiles2"
         app:layout_constraintBottom_toBottomOf="@+id/btnAnimal1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btnAnimal1"
-        tools:src="@tools:sample/avatars" />
+        tools:src="@mipmap/ic_reptiles2" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/animal1"
+        android:text="Camaleon"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="@+id/btnAnimal1"
         app:layout_constraintStart_toStartOf="@+id/btnAnimal1"
@@ -68,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/animal2"
+        android:text="Cocodrilo"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="@+id/btnAnimal2"
         app:layout_constraintStart_toStartOf="@+id/btnAnimal2"
