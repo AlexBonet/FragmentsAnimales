@@ -20,6 +20,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_xReptilesFragment"
             app:destination="@id/xReptilesFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_xPecesFragment"
+            app:destination="@id/xPecesFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -95,5 +98,38 @@
         <action
             android:id="@+id/action_xReptiles2Fragment_to_xReptilesFragment"
             app:destination="@id/xReptilesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xPecesFragment"
+        android:name="es.alexbonet.fragmentsv2.xPecesFragment"
+        android:label="fragment_x_peces"
+        tools:layout="@layout/fragment_x_peces" >
+        <action
+            android:id="@+id/action_xPecesFragment_to_xPeces1Fragment"
+            app:destination="@id/xPeces1Fragment" />
+        <action
+            android:id="@+id/action_xPecesFragment_to_xPeces2Fragment"
+            app:destination="@id/xPeces2Fragment" />
+        <action
+            android:id="@+id/action_xPecesFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xPeces1Fragment"
+        android:name="es.alexbonet.fragmentsv2.xPeces1Fragment"
+        android:label="fragment_x_peces1"
+        tools:layout="@layout/fragment_x_peces1" >
+        <action
+            android:id="@+id/action_xPeces1Fragment_to_xPecesFragment"
+            app:destination="@id/xPecesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xPeces2Fragment"
+        android:name="es.alexbonet.fragmentsv2.xPeces2Fragment"
+        android:label="fragment_x_peces2"
+        tools:layout="@layout/fragment_x_peces2" >
+        <action
+            android:id="@+id/action_xPeces2Fragment_to_xPecesFragment"
+            app:destination="@id/xPecesFragment" />
     </fragment>
 </navigation>
