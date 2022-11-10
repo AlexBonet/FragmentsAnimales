@@ -1,4 +1,4 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="fotos">100dp</dimen>
+    <dimen name="fotos">120dp</dimen>
 </resources>
