@@ -17,6 +17,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_xMamiferosFragment"
             app:destination="@id/xMamiferosFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_xReptilesFragment"
+            app:destination="@id/xReptilesFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -59,5 +62,38 @@
         <action
             android:id="@+id/action_xMamiferos2Fragment_to_xMamiferosFragment"
             app:destination="@id/xMamiferosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xReptilesFragment"
+        android:name="es.alexbonet.fragmentsv2.xReptilesFragment"
+        android:label="fragment_x_reptiles"
+        tools:layout="@layout/fragment_x_reptiles" >
+        <action
+            android:id="@+id/action_xReptilesFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_xReptilesFragment_to_xReptiles2Fragment"
+            app:destination="@id/xReptiles2Fragment" />
+        <action
+            android:id="@+id/action_xReptilesFragment_to_xReptiles1Fragment"
+            app:destination="@id/xReptiles1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xReptiles1Fragment"
+        android:name="es.alexbonet.fragmentsv2.xReptiles1Fragment"
+        android:label="fragment_x_reptil1"
+        tools:layout="@layout/fragment_x_reptil1" >
+        <action
+            android:id="@+id/action_xReptiles1Fragment_to_xReptilesFragment"
+            app:destination="@id/xReptilesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xReptiles2Fragment"
+        android:name="es.alexbonet.fragmentsv2.xReptiles2Fragment"
+        android:label="fragment_x_reptil2"
+        tools:layout="@layout/fragment_x_reptil2" >
+        <action
+            android:id="@+id/action_xReptiles2Fragment_to_xReptilesFragment"
+            app:destination="@id/xReptilesFragment" />
     </fragment>
 </navigation>

@@ -33,7 +33,7 @@ public class FirstFragment extends Fragment {
                 .navigate(R.id.action_FirstFragment_to_xMamiferosFragment));
 
         binding.btnAnimal2.setOnClickListener(view12 -> NavHostFragment.findNavController(FirstFragment.this)
-                .navigate(R.id.action_FirstFragment_to_SecondFragment));
+                .navigate(R.id.action_FirstFragment_to_xReptilesFragment));
 
         binding.btnPeces.setOnClickListener(view13 -> NavHostFragment.findNavController(FirstFragment.this)
                 .navigate(R.id.action_FirstFragment_to_SecondFragment));
