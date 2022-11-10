@@ -26,6 +26,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_xAnfibiosFragment"
             app:destination="@id/xAnfibiosFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_xAvesFragment"
+            app:destination="@id/xAvesFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -167,5 +170,38 @@
         <action
             android:id="@+id/action_xAnfibios2Fragment_to_xAnfibiosFragment"
             app:destination="@id/xAnfibiosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xAvesFragment"
+        android:name="es.alexbonet.fragmentsv2.xAvesFragment"
+        android:label="fragment_x_aves"
+        tools:layout="@layout/fragment_x_aves" >
+        <action
+            android:id="@+id/action_xAvesFragment_to_xAves2Fragment"
+            app:destination="@id/xAves2Fragment" />
+        <action
+            android:id="@+id/action_xAvesFragment_to_xAves1Fragment"
+            app:destination="@id/xAves1Fragment" />
+        <action
+            android:id="@+id/action_xAvesFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xAves1Fragment"
+        android:name="es.alexbonet.fragmentsv2.xAves1Fragment"
+        android:label="fragment_x_aves1"
+        tools:layout="@layout/fragment_x_aves1" >
+        <action
+            android:id="@+id/action_xAves1Fragment_to_xAvesFragment"
+            app:destination="@id/xAvesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xAves2Fragment"
+        android:name="es.alexbonet.fragmentsv2.xAves2Fragment"
+        android:label="fragment_x_aves2"
+        tools:layout="@layout/fragment_x_aves2" >
+        <action
+            android:id="@+id/action_xAves2Fragment_to_xAvesFragment"
+            app:destination="@id/xAvesFragment" />
     </fragment>
 </navigation>

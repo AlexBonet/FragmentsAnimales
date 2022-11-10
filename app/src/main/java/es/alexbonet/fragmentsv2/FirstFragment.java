@@ -42,7 +42,7 @@ public class FirstFragment extends Fragment {
                 .navigate(R.id.action_FirstFragment_to_xAnfibiosFragment));
 
         binding.btnAves.setOnClickListener(view15 -> NavHostFragment.findNavController(FirstFragment.this)
-                .navigate(R.id.action_FirstFragment_to_SecondFragment));
+                .navigate(R.id.action_FirstFragment_to_xAvesFragment));
     }
 
     @Override
