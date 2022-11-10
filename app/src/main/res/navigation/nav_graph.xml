@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="es.alexbonet.fragmentsv2.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_xMamiferosFragment"
+            app:destination="@id/xMamiferosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="es.alexbonet.fragmentsv2.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xMamiferosFragment"
+        android:name="es.alexbonet.fragmentsv2.xMamiferosFragment"
+        android:label="xMamiferosFragment" >
+        <action
+            android:id="@+id/action_xMamiferosFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_xMamiferosFragment_to_xMamiferos1Fragment"
+            app:destination="@id/xMamiferos1Fragment" />
+        <action
+            android:id="@+id/action_xMamiferosFragment_to_xMamiferos2Fragment"
+            app:destination="@id/xMamiferos2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xMamiferos1Fragment"
+        android:name="es.alexbonet.fragmentsv2.xMamiferos1Fragment"
+        android:label="fragment_x_mamifero1"
+        tools:layout="@layout/fragment_x_mamifero1" >
+        <action
+            android:id="@+id/action_xMamiferos1Fragment_to_xMamiferosFragment"
+            app:destination="@id/xMamiferosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xMamiferos2Fragment"
+        android:name="es.alexbonet.fragmentsv2.xMamiferos2Fragment"
+        android:label="fragment_x_mamifero2"
+        tools:layout="@layout/fragment_x_mamifero2" >
+        <action
+            android:id="@+id/action_xMamiferos2Fragment_to_xMamiferosFragment"
+            app:destination="@id/xMamiferosFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/fondoTitulo"
+        android:gravity="center"
+        android:text="@string/animales"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnAnimal1"
+        android:layout_width="@dimen/fotos"
+        android:layout_height="@dimen/fotos"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/btnAnimal2"
+        android:layout_width="@dimen/fotos"
+        android:layout_height="@dimen/fotos"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnimal1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAnimal1"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/btnPeces"
+        android:layout_width="@dimen/fotos"
+        android:layout_height="@dimen/fotos"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnimal1"
+        app:layout_constraintStart_toStartOf="@+id/btnAnimal1"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnimal1"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/btnAnfibios"
+        android:layout_width="@dimen/fotos"
+        android:layout_height="@dimen/fotos"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPeces"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnimal2"
+        app:layout_constraintStart_toStartOf="@+id/btnAnimal2"
+        app:layout_constraintTop_toTopOf="@+id/btnPeces"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/btnAves"
+        android:layout_width="@dimen/fotos"
+        android:layout_height="@dimen/fotos"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnPeces"
+        app:layout_constraintStart_toStartOf="@+id/btnPeces"
+        app:layout_constraintTop_toBottomOf="@+id/btnPeces"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/mamiferos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnimal1"
+        app:layout_constraintStart_toStartOf="@+id/btnAnimal1"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnimal1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/reptile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnimal2"
+        app:layout_constraintStart_toStartOf="@+id/btnAnimal2"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnimal2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/peces"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/btnPeces"
+        app:layout_constraintStart_toStartOf="@+id/btnPeces"
+        app:layout_constraintTop_toBottomOf="@+id/btnPeces" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/anfibios"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnfibios"
+        app:layout_constraintStart_toStartOf="@+id/btnAnfibios"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnfibios" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/aves"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/btnAves"
+        app:layout_constraintStart_toStartOf="@+id/btnAves"
+        app:layout_constraintTop_toBottomOf="@+id/btnAves" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

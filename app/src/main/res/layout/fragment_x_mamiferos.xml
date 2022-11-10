@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".xMamiferosFragment">
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/fondoTitulo"
+        android:gravity="center"
+        android:text="@string/mamiferos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_second"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="#3F51B5"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_exit_to_app_24"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnAnimal1"
+        android:layout_width="@dimen/fotos"
+        android:layout_height="@dimen/fotos"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/btnAnimal2"
+        android:layout_width="@dimen/fotos"
+        android:layout_height="@dimen/fotos"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnimal1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAnimal1"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/animal1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnimal1"
+        app:layout_constraintStart_toStartOf="@+id/btnAnimal1"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnimal1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/animal2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnimal2"
+        app:layout_constraintStart_toStartOf="@+id/btnAnimal2"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnimal2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

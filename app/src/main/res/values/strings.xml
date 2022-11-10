@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FragmentsV2</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="peces">PECES</string>
+    <string name="animales">ANIMALES</string>
+    <string name="mamiferos">MAMIFEROS</string>
+    <string name="reptile">REPTILES</string>
+    <string name="anfibios">ANFIBIOS</string>
+    <string name="aves">AVES</string>
+
+    <string name="animal1">Animal 1</string>
+    <string name="animal2">Animal 2</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat, ante et varius convallis, ligula nibh dictum felis, sit amet lobortis nibh lectus sed purus. Aenean eu molestie lectus, eu bibendum libero. Nulla dapibus facilisis aliquam. In hac habitasse platea dictumst. Pellentesque efficitur, odio vel fringilla cursus, sapien metus dictum arcu, eu pharetra risus sapien convallis ipsum. Pellentesque quis ornare libero. Morbi fringilla, ipsum sed lobortis condimentum, metus dui tincidunt purus, eu tempus nibh lectus sit amet urna. Aenean ultricies sem arcu, eget dignissim felis tincidunt non.</string>
+</resources>
