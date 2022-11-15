@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     tools:context=".FirstFragment">
 
     <TextView
@@ -143,5 +142,18 @@
         app:layout_constraintEnd_toEndOf="@+id/btnAves"
         app:layout_constraintStart_toStartOf="@+id/btnAves"
         app:layout_constraintTop_toBottomOf="@+id/btnAves" />
+
+    <TextView
+        android:id="@+id/recibirUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#00BCD4"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAves"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnfibios"
+        app:layout_constraintStart_toStartOf="@+id/btnAnfibios"
+        app:layout_constraintTop_toTopOf="@+id/btnAves" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
